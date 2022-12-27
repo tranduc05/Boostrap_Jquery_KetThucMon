@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <link rel="stylesheet" href="./bootstrap.min.js" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <title>danh sách sản phẩm</title>
+  </head>
+  <body>
+    <div class="wapper">
+      <header class="header">
+        <div class="infor container">
+          <div class="d-flex justify-content-between align-items-center py-3">
+            <div class="infor_left d-flex">
+              <div style="margin-right: 1rem" class="infor_item ml fs-6">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Phú Đô, Mễ Trì, Hà Nội </span>
+              </div>
+              <div class="infor_item mx-3 fs-6">
+                <i class="fa-solid fa-envelope"></i>
+                <span> fruitsstore@gmail.com </span>
+              </div>
+            </div>
+            <div class="infor-right fs-6">
+              <span>Follow us: </span>
+              <i class="fa-brands fa-facebook ms-2"></i>
+              <i class="fa-brands fa-twitter ms-2"></i>
+              <i class="fa-brands fa-instagram ms-2"></i>
+              <i class="fa-brands fa-tiktok ms-2"></i>
+            </div>
+          </div>
+        </div>
+        <div class="hr"></div>
+        <nav
+          class="container d-flex justify-content-between align-items-center my-4"
+        >
+          <div class="logo">
+            <img src="img/logo.png" alt="" />
+          </div>
+          <div class="menu d-flex align-items-center">
+            <div class="d-flex text-dark menu_item">
+              <a href="index.html" class="mx-2">Trang chủ</a>
+              <a href="products.html" class="mx-2">Sản Phẩm</a>
+              <a href="about.html" class="mx-2">Giới thiệu</a>
+              <a href="contact.html" class="mx-2">Liên Hệ</a>
+              <a href="#" class="mx-2">Blog</a>
+            </div>
+            <div class="ms-2 d-flex icon">
+              <span class="ms-2 ms-lg-4" href="">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
+              <span class="ms-2 ms-lg-4" href="">
+                <i class="fa fa-user"></i>
+              </span>
+              <a class="ms-2 ms-lg-4" href="./cart.html">
+                <i class="fa fa-shopping-bag"></i>
+              </a>
+              <span class="ms-2 ms-lg-4 bar" href="">
+                <i class="fa-solid fa-bars"></i>
+              </span>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="body m-header">
+        <div class="container">
+          <div class="d-flex">
+            <div class="filter">
+              <div class="d-block d-lg-none fs-1 close_fitler">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+              <div class="gia mt-5">
+                <h4>Mức Giá</h4>
+                <div class="form-check">
+                  <input class="form-check-input bg-success" type="checkbox" />
+                  <label class="form-check-label" for="khac">
+                    Giá dưới 100.000đ
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input bg-success text-bg-success"
+                    type="checkbox"
+                  />
+                  <label class="form-check-label" for="EGAGREEN">
+                    100.000đ - 200.000đ
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input bg-success text-bg-success"
+                    type="checkbox"
+                  />
+                  <label class="form-check-label" for="EGA"
+                    >200.000đ - 300.000đ
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input bg-success text-bg-success"
+                    type="checkbox"
+                  />
+                  <label class="form-check-label" for="EGA"
+                    >300.000đ - 500.000đ
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input bg-success text-bg-success"
+                    type="checkbox"
+                  />
+                  <label class="form-check-label" for="EGA"
+                    >500.000đ - 1.000.000đ
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input bg-success text-bg-success"
+                    type="checkbox"
+                  />
+                  <label class="form-check-label" for="EGA"
+                    >Giá trên 1.000.000đ
+                  </label>
+                </div>
+              </div>
+              <div class="loai mt-5">
+                <h4>Loại</h4>
+                <div class="form-check">
+                  <input class="form-check-input bg-success" type="checkbox" />
+                  <label class="form-check-label" for="khac"> Khác </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input bg-success text-bg-success"
+                    type="checkbox"
+                  />
+                  <label class="form-check-label" for="EGAGREEN">
+                    Thực phẩm
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input bg-success text-bg-success"
+                    type="checkbox"
+                  />
+                  <label class="form-check-label" for="EGA"
+                    >Thực phẩm tươi sống
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input bg-success text-bg-success"
+                    type="checkbox"
+                  />
+                  <label class="form-check-label" for="EGA">Nhập khẩu </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input bg-success text-bg-success"
+                    type="checkbox"
+                  />
+                  <label class="form-check-label" for="EGA"
+                    >Nông sản Việt
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input bg-success text-bg-success"
+                    type="checkbox"
+                  />
+                  <label class="form-check-label" for="EGA"
+                    >Giá trên 1.000.000đ
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="all_product">
+              <div class="baner">
+                <img src="./img/banner1.jpg" class="img-fluid" alt="" />
+              </div>
+
+              <!-- sắp xếp -->
+              <div
+                class="d-flex justify-content-between align-items-center mt-5"
+              >
+                <div style="width: 250px" class="sapxep">
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option value="1">tên A-Z</option>
+                    <option value="2">Tên Z-A</option>
+                    <option value="3">Giá tăng dần</option>
+                    <option value="3">Giá giảm dần</option>
+                    <option value="3">Hàng mới</option>
+                  </select>
+                </div>
+                <div class="loc d-block d-lg-none">
+                  <i class="fa-solid fa-filter"></i>
+                  Lọc
+                </div>
+              </div>
+              <div class="products">
+                <div class="row">
+                  <div class="col-12 col-md-4 col-lg-3">
+                    <div class="box_product">
+                      <img src="./img/bctim.webp" alt="" />
+                      <h5>Bắp Cải Tím Hữu Cơ - 500g</h5>
+
+                      <p>55,000₫ <del>75,000₫</del></p>
+
+                      <div class="deltai_cart row">
+                        <div class="col-6">
+                          <a href="detailProduct.html"> Xem chi tiết </a>
+                        </div>
+                        <div class="col-6">
+                          <a href="cart.html"> Thêm vào giỏ hàng </a>
+                        </div>
+                      </div>
+                      <div class="product_new">New</div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-3">
+                    <div class="box_product">
+                      <img src="./img/bapngot.webp" alt="" />
+                      <h5>Bắp Ngọt Hữu Cơ 500gr</h5>
+
+                      <p>58,000₫ <del>65,000₫</del></p>
+
+                      <div class="deltai_cart row">
+                        <div class="col-6">
+                          <a href="">Xem chi tiết </a>
+                        </div>
+                        <div class="col-6">
+                          <a href=""> Thêm vào giỏ hàng </a>
+                        </div>
+                      </div>
+                      <div class="product_new">New</div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-3">
+                    <div class="box_product">
+                      <img src="./img/bongcai.jpg" alt="" />
+                      <h5>Bông Cải Xanh Hữu Cơ - 300g</h5>
+
+                      <p>57,000₫ <del>68,000₫</del></p>
+
+                      <div class="deltai_cart row">
+                        <div class="col-6">
+                          <a href=""> Xem chi tiết </a>
+                        </div>
+                        <div class="col-6">
+                          <a href=""> Thêm vào giỏ hàng </a>
+                        </div>
+                      </div>
+                      <div class="product_new">New</div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-3">
+                    <div class="box_product">
+                      <img src="./img/cachua.webp" alt="" />
+                      <h5>Cà Chua Bee Ngọt Hữu Cơ - 300g</h5>
+
+                      <p>40,500₫ <del>50,500₫</del></p>
+
+                      <div class="deltai_cart row">
+                        <div class="col-6">
+                          <a href=""> Xem chi tiết </a>
+                        </div>
+                        <div class="col-6">
+                          <a href=""> Thêm vào giỏ hàng </a>
+                        </div>
+                      </div>
+                      <div class="product_new">New</div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-3">
+                    <div class="box_product">
+                      <img src="./img/bo.webp" alt="" />
+                      <h5>Bơ 034 Canh Tác Hữu Cơ 500g</h5>
+
+                      <p>61,250₫ <del>69,500₫</del></p>
+
+                      <div class="deltai_cart row">
+                        <div class="col-6">
+                          <a href=""> Xem chi tiết </a>
+                        </div>
+                        <div class="col-6">
+                          <a href=""> Thêm vào giỏ hàng </a>
+                        </div>
+                      </div>
+                      <div class="product_new">New</div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-3">
+                    <div class="box_product">
+                      <img src="./img/buoi.webp " alt="" />
+                      <h5>Bưởi Da Xanh Hữu Cơ Loại 1 - 1kg</h5>
+
+                      <p>110,000₫ <del>130,000₫</del></p>
+
+                      <div class="deltai_cart row">
+                        <div class="col-6">
+                          <a href=""> Xem chi tiết </a>
+                        </div>
+                        <div class="col-6">
+                          <a href=""> Thêm vào giỏ hàng </a>
+                        </div>
+                      </div>
+                      <div class="product_new">New</div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-3">
+                    <div class="box_product">
+                      <img src="./img/cam.webp" alt="" />
+                      <h5>Cam Vàng Úc - 1kg</h5>
+
+                      <p>159,000₫ <del>165,000₫</del></p>
+
+                      <div class="deltai_cart row">
+                        <div class="col-6">
+                          <a href=""> Xem chi tiết </a>
+                        </div>
+                        <div class="col-6">
+                          <a href=""> Thêm vào giỏ hàng </a>
+                        </div>
+                      </div>
+                      <div class="product_new">New</div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-3">
+                    <div class="box_product">
+                      <img src="./img/cherry.webp" alt="" />
+                      <h5>Cherry đỏ Mỹ - 250g</h5>
+
+                      <p>220,000₫ <del>250,000₫</del></p>
+
+                      <div class="deltai_cart row">
+                        <div class="col-6">
+                          <a href=""> Xem chi tiết </a>
+                        </div>
+                        <div class="col-6">
+                          <a href=""> Thêm vào giỏ hàng </a>
+                        </div>
+                      </div>
+                      <div class="product_new">New</div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-3">
+                    <div class="box_product">
+                      <img src="./img/cachua1.webp" alt="" />
+                      <h5>Cà Chua Socola Hữu Cơ- 300g</h5>
+
+                      <p>38,000₫ <del>48,000₫</del></p>
+
+                      <div class="deltai_cart row">
+                        <div class="col-6">
+                          <a href=""> Xem chi tiết </a>
+                        </div>
+                        <div class="col-6">
+                          <a href=""> Thêm vào giỏ hàng </a>
+                        </div>
+                      </div>
+                      <div class="product_new">New</div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-3">
+                    <div class="box_product">
+                      <img src="./img/carot.jpg" alt="" />
+                      <h5>Cà Rốt Baby Hữu Cơ- 200g</h5>
+
+                      <p>57,000₫ <del>65,000₫</del></p>
+
+                      <div class="deltai_cart row">
+                        <div class="col-6">
+                          <a href=""> Xem chi tiết </a>
+                        </div>
+                        <div class="col-6">
+                          <a href=""> Thêm vào giỏ hàng </a>
+                        </div>
+                      </div>
+                      <div class="product_new">New</div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-3">
+                    <div class="box_product">
+                      <img src="./img/chuoi.webp" alt="" />
+                      <h5>Chuối già hữu cơ Vinamit - 1 pack</h5>
+
+                      <p>$19.00 <del>$29.00</del></p>
+
+                      <div class="deltai_cart row">
+                        <div class="col-6">
+                          <a href=""> Xem chi tiết </a>
+                        </div>
+                        <div class="col-6">
+                          <a href=""> Thêm vào giỏ hàng </a>
+                        </div>
+                      </div>
+                      <div class="product_new">New</div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-3">
+                    <div class="box_product">
+                      <img src="./img/dautay.webp" alt="" />
+                      <h5>Dâu Tây Hàn Quốc hộp 330g</h5>
+
+                      <p>399,000₫ <del>419,000₫</del></p>
+
+                      <div class="deltai_cart row">
+                        <div class="col-6">
+                          <a href=""> xem chi tiết </a>
+                        </div>
+                        <div class="col-6">
+                          <a href=""> Thêm vào giỏ hàng </a>
+                        </div>
+                      </div>
+                      <div class="product_new">New</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="logo">
+                <img src="img/logo.png" alt="">
+              </div>
+              <div class="d-flex link">
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <h4>Thông tin cửa hàng</h4>
+              <ul>
+                <li>Địa chỉ: Phú Đô, Mễ Trì, Hà Nội</li>
+                <li>Hotline: 0329916923</li>
+                <li>Email: fruitsstore@gmail.com</li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <h4>Về Latin Fruit</h4>
+              <ul>
+                <li><a href="">Về chúng tôi</a></li>
+                <li><a href="">Liên hệ chúng tôi</a></li>
+                <li><a href="">Dịch vụ của chúng tôi</a></li>
+                <li><a href="">Kì hạn và điều kiện</a></li>
+                <li><a href="">Hỗ trợ</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <h4>Chính sách và dịch vụ</h4>
+              <ul>
+                <li><a href="">Đổi trả 48h</a></li>
+                <li><a href="">Chính sách khách hàng thân thiết</a></li>
+                <li><a href="">Chính sách bảo mật thông tin cá nhân</a></li>
+                <li><a href="">Chính sách cho khách hàng doanh nghiệp</a></li>
+              </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./jquery.min.js"></script>
+
+    <script>
+      //hiệu ứng navbar
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 45) {
+          $(".header").addClass("bg-white shadow");
+          $(".infor").addClass("d-none");
+        } else {
+          $(".header").removeClass("bg-white shadow");
+          $(".infor").removeClass("d-none");
+        }
+      });
+      // ẩn hiện menu
+      $(".bar").click(function (e) {
+        $(".menu_item").toggleClass("active");
+      });
+
+      // hiện bộ lọc
+      $(".loc").click(function () {
+        $(".filter").addClass("active");
+      });
+
+      // đóng bộ lọc
+      $(".close_fitler").click(function () {
+        $(".filter").removeClass("active");
+      });
+    </script>
+  </body>
+</html>
